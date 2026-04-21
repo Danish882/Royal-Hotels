@@ -16,7 +16,7 @@ const Footer = () => {
   };
 
   const footerLinks = ["HOME", "BOOKINGS", "ROOMS", "CONTACT"];
-  const linkPaths = ["/", "/#bookings", "/#rooms", "/#contact"];
+  const linkPaths = ["/", "/bookings", "/rooms", "/contact"];
 
   return (
     <footer className="bg-black text-white relative overflow-hidden">
@@ -39,31 +39,6 @@ const Footer = () => {
           <p className="text-gray-400 text-sm mb-8">
             Get the best deals delivered straight to your inbox.
           </p>
-
-          {joined ? (
-            <div className="flex items-center justify-center gap-2 text-lime-400 font-bold text-lg animate-pulse">
-              <span>✅</span> You're in! Welcome to Royal Hotels.
-            </div>
-          ) : (
-            <form
-              onSubmit={handleJoin}
-              className="flex items-center justify-center max-w-lg mx-auto w-full group"
-            >
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your email address"
-                className="grow px-6 py-4 bg-transparent border-2 border-r-0 border-lime-500 rounded-l-full outline-none text-sm text-white placeholder-gray-500 focus:border-lime-300 transition-colors duration-300"
-              />
-              <button
-                type="submit"
-                className="bg-lime-400 hover:bg-lime-300 text-black px-8 py-4 rounded-r-full font-black text-sm transition-all duration-300 hover:shadow-lg hover:shadow-lime-400/30 active:scale-95"
-              >
-                Join Now
-              </button>
-            </form>
-          )}
         </div>
 
         {/* Divider */}

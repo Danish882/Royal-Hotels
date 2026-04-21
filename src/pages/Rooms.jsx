@@ -176,7 +176,7 @@ const Rooms = () => {
                   </div>
 
                   <Link
-                    to={`/room/${room._id}`}
+                    to={`/rooms/${room._id}`}
                     className="block w-full bg-lime-400 hover:bg-lime-500 text-black font-bold text-center py-3 rounded-xl transition-all duration-200 active:scale-95"
                   >
                     View Details
