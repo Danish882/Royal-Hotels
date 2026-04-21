@@ -103,35 +103,6 @@ const Footer = () => {
           </div>
 
           {/* Right — Nav Links */}
-          <div className="flex flex-col items-center md:items-end gap-4">
-            <ul className="flex gap-6 flex-wrap justify-center md:justify-end">
-              {footerLinks.map((link, i) => (
-                <li key={i}>
-                  <Link
-                    to={linkPaths[i]}
-                    className="text-gray-400 hover:text-lime-400 text-sm font-bold uppercase tracking-wider transition-colors duration-300 relative group"
-                  >
-                    {link}
-                    <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-lime-400 group-hover:w-full transition-all duration-300" />
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <div className="flex gap-3 mt-2">
-              <Link
-                to="/login"
-                className="text-xs font-bold border border-gray-700 text-gray-400 hover:border-lime-400 hover:text-lime-400 px-5 py-2 rounded-xl transition-all duration-300"
-              >
-                Login
-              </Link>
-              <Link
-                to="/signup"
-                className="text-xs font-black bg-lime-400 text-black hover:bg-lime-300 px-5 py-2 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-lime-400/20"
-              >
-                Sign Up
-              </Link>
-            </div>
-          </div>
         </div>
 
         {/* Copyright */}
